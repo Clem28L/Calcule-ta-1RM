@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "tailwindcss": "^3.0.15"
+  },
+  "name": "calcule-ta-1rm",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "build": "tailwindcss build src/tailwind.css -o dist/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Clem28L/Calcule-ta-1RM.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Clem28L/Calcule-ta-1RM/issues"
+  },
+  "homepage": "https://github.com/Clem28L/Calcule-ta-1RM#readme",
+  "description": ""
+}
