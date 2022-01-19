@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-blue-800;
+}
+body {
+  @apply bg-blue-800;
+}
+.message-result-rep {
+  @apply font-bold w-full sm:w-1/3 mt-4 sm:mt-4  mb-4 text-gray-300;
+}
+.message-result-load {
+  @apply font-bold w-full  sm:w-1/3 mt-4 sm:mt-4  mb-4 text-gray-300;
+}
+.message-result-time {
+  @apply font-bold w-full sm:w-1/3 mt-4 sm:mt-4 mb-4  text-gray-300;
+}
+.nav {
+  @apply bg-slate-800 px-5;
+}
+.nav-title {
+  @apply text-gray-300 font-bold py-3;
+}
+.rm-content {
+  @apply py-6 sm:py-10 md:py-14 px-6 sm:px-14 md:px-24 w-full;
+}
+.head-title-rm {
+  @apply pb-6 sm:pb-10 md:pb-14 font-bold text-gray-300 text-4xl text-center;
+}
+.inp {
+  @apply placeholder:font-bold placeholder:text-blue-300 bg-blue-600 px-4 py-2 mx-1 rounded-3xl transition duration-1000 focus:outline-none hover:rounded-xl focus:rounded-xl text-gray-300 text-center;
+}
+.card-rm {
+  @apply rounded-3xl bg-blue-700 py-6 sm:py-8 px-6 sm:px-8 md:px-10;
+}
+.results {
+  @apply w-full sm:w-1/3 mt-4 sm:mt-0 text-center text-blue-100 bg-blue-600 rounded-xl py-2 px-4;
+}
+.head-title-volume {
+  @apply pt-6 sm:pt-10 md:pt-7 font-bold text-gray-300 text-4xl text-center;
+}
+.choose-volume {
+  @apply text-center pt-2;
+}
+.button-volume {
+  @apply bg-blue-600 mt-2 px-4 py-2 mx-1 rounded-3xl transition duration-1000 focus:outline-none hover:rounded-xl focus:rounded-xl text-gray-300 text-center;
+}
+
+#submit {
+  @apply mt-2;
+}
+.message-result-rep {
+  @apply font-bold  w-full sm:w-1/3 mt-4 sm:mt-4  mb-4 text-gray-300;
+}
+.message-result-load {
+  @apply font-bold w-full sm:w-1/3 mt-4 sm:mt-4  mb-4 text-gray-300;
+}
+.message-result-time {
+  @apply font-bold w-full sm:w-1/3 mt-4 sm:mt-4 mb-4  text-gray-300;
+}
+.volume-content {
+  @apply py-6 sm:py-10 md:py-14 px-6 sm:px-14 md:px-24 w-full;
+}
+.card-volume {
+  @apply rounded-3xl bg-blue-700;
+}
+.message-endurance {
+  @apply w-full text-2xl  pt-2 font-bold text-gray-300;
+}
+
+#card-empty {
+  text-align: center;
+  @apply mt-2 py-6 sm:py-8 px-6 sm:px-8 md:px-10 font-bold text-gray-300;
+}
+.card-volume {
+  @apply mt-2 ml-2 px-6 sm:px-8 md:px-10;
+}
+footer {
+  @apply text-gray-300 font-bold bg-slate-800 px-5 py-10;
+}
+#G {
+  max-width: 3%;
+}
+#Gh {
+  max-width: 3%;
+}
+.footer-left {
+  text-align: left;
+}

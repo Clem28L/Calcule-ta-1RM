@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/style.css" />
+    <title>Calcule-ta-1RM</title>
+  </head>
+  <body>
+        <div class="nav">
+          <h1 class="nav-title">Calcule ta 1RM</h1>
+        </div>
+    
+        <div class="content">
+          <div class="rm-content">
+            <div class="header-rm">
+              <h2 class="head-title-rm">Calcule ta 1RM</h2>
+            </div>
+            <div class="card-rm flex flex-wrap">
+              <div class="inputs sm:w-2/3 w-full text-center">
+           
+                <input
+                  type="number"
+                  placeholder="Nb de Répetitions"
+                  type="number"
+                  id="rep"
+                  class="inp mb-2"
+                />
+                <input
+                  type="number"
+                  placeholder="Charge en Kg"
+                  type="number"
+                  id="load"
+                  class="inp"
+                />
+                <input
+                  class="inp"
+                  id="submit"
+                  type="submit"
+                  value="Envoyer"
+                  onclick="get1Rm();"
+                />
+              </div>
+              <div
+                class="results w-full sm:w-1/3 mt-4 sm:mt-0 text-center text-blue-100 bg-blue-600 rounded-xl py-2 px-4"
+              >
+                <div id="1Rm-results" class="font-bold text-6xl number"></div>
+                <div class="font-bold kg"></div>
+              </div>
+            </div>
+          </div>
+          <div class="volume-content">
+          
+              <div class="header_volume">
+                <h2 class="head-title-volume">Choisis le volume de travail</h2>
+              </div>
+              <div class="choose-volume">
+                <div class="button">
+                  <button class="button-volume" data-toggle="stamina" onclick="getcharge(45, 1)">
+                      Santé
+                  </button>
+                  <button class="button-volume" data-toggle="power"  onclick="getcharge(57, 2)">
+                      Tonification
+                  </button>
+                  <button class="button-volume" data-toggle="strength"  onclick="getcharge(73 , 3)">
+                      Prise de masse
+                  </button>
+                  <button class="button-volume" data-toggle="strength-max"  onclick="getcharge(85, 4)">
+                     Puissance
+                  </button>
+              </div> 
+            </div>
+              <div class="card-change">
+                <div id="stamina" style="display: none" class="card-volume  flex-wrap">
+                  <h3 class="message-endurance">
+                    Affinement esthétique / santé: 5 à 6 série 
+                  </h3>
+                  <p  class="message-result-rep">Nombre de <br/>répétitions : entre 20 et 40 rep : V dynamique </p>
+                  <p id="1" class="message-result-load">charge : </p>
+                  <p  class="message-result-time">temps de repos : 30s à 1 min</p>
+            
+                </div>
+                <div id="power" style="display: none" class="card-volume  flex-wrap">
+                  <h3 class="message-endurance">
+                    Entretien de la forme / Tonification  : 4 à 5 série
+      
+                  </h3>
+                  <p class="message-result-rep">Nombre de <br/>répétitions : entre 15 et 20 rep : V moyenne </p>
+                  <p id="2" class="message-result-load">charge : </p>
+                  <p class="message-result-time">temps de repos : 1 à 1'30 min</p>
+                </div>
+    
+                <div id="strength" style="display: none" class="card-volume  flex-wrap" >
+                  <h3 class="message-endurance">
+                    Prise de masse : 5 à 10 série 
+                  </h3>
+                  <p class="message-result-rep">Nombre de <br/>répétitions : entre 10 et 12 rep : V lente </p>
+                  <p id="3" class="message-result-load">charge : </p>
+                  <p class="message-result-time">temps de repos : 1'30 à 2 min </p>
+            
+                </div>
+                <div id="strength-max" style="display: none" class="card-volume  flex-wrap">
+                  <h3 class="message-endurance">
+                    Gain de puissance : 3 à 6 série
+                  </h3>
+                  <p class="message-result-rep">Nombre de <br/>répétitions : entre 4 et 8 rep : V explosif</p>
+                  <p id="4" class="message-result-load">charge : </p>
+                  <p class="message-result-time">temps de repos : 3 à 5 min</p>
+            
+                </div>
+                  
+              
+              </div>
+            </div>
+            </div>
+            <script>
+              const toggleButtons = document.querySelectorAll('button[data-toggle]');
+              const toggleableElements = {};
+          
+              const onClick = function(event) {
+                  const idToToggle = event.currentTarget.getAttribute('data-toggle');
+                  for (const toggleableElementKey in toggleableElements) {
+                      if (idToToggle === toggleableElementKey) {
+                          toggleableElements[toggleableElementKey].style.display = 'flex';
+                      } else {
+                          toggleableElements[toggleableElementKey].style.display = 'none';
+                      }
+                  }
+              }
+          
+              toggleButtons.forEach(function(toggleButton) {
+                  toggleButton.addEventListener('click', onClick);
+                  const idToToggle = toggleButton.getAttribute('data-toggle');
+                  toggleableElements[idToToggle] = document.getElementById(idToToggle);
+              });
+          </script>
+          </div>
+          
+    <footer >
+      <div class="footer-left">
+        <p class="footer-coded">
+          Codé par Clement L. 
+        </p>
+        <p>Calcul-ta-1RM &copy; 2022</p>
+      </div>
+
+    </footer>
+          
+       
+        <script src="index.js"></script>
+  </body>
+</html>
