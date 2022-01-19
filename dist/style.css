@@ -600,6 +600,7 @@ body {
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity));
+  text-align: left;
 }
 
 .rm-content {
@@ -1003,6 +1004,10 @@ footer {
 
 .footer-left {
   text-align: left;
+}
+
+#coded {
+  text-align: right;
 }
 
 @media (min-width: 640px) {
