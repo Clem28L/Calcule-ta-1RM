@@ -658,6 +658,8 @@ body {
 }
 
 .card-rm {
+  display: flex;
+  flex-wrap: wrap;
   border-radius: 1.5rem;
   --tw-bg-opacity: 1;
   background-color: rgb(29 78 216 / var(--tw-bg-opacity));
@@ -952,4 +954,15 @@ footer {
 
 .footer-left {
   text-align: left;
+}
+
+.inputs {
+  width: 100%;
+  text-align: center;
+}
+
+@media (min-width: 640px) {
+  .inputs {
+    width: 66.666667%;
+  }
 }
