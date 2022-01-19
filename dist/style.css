@@ -987,6 +987,10 @@ footer {
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity));
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 #G {
