@@ -67,7 +67,7 @@ body {
   @apply py-6 sm:py-10 md:py-14 px-6 sm:px-14 md:px-24 w-full;
 }
 .card-volume {
-  @apply rounded-3xl bg-blue-700;
+  @apply rounded-3xl bg-blue-700 flex-wrap;
 }
 .message-endurance {
   @apply w-full text-2xl  pt-2 font-bold text-gray-300;

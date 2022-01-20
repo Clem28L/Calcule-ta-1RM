@@ -1,6 +1,9 @@
 module.exports = {
   future: {},
-  purge: [],
+  content: [
+    "./index.html",
+    "./src/**/*.css",
+  ],
   theme: {
   extend: {},
   },
