@@ -21,7 +21,7 @@ function get1Rm() {
     return false;
   }
   document.querySelector("#result-div").style.display = "block";
-  fielresult.textContent = Math.round(result) + "kg";
+  fielresult.textContent = Math.round(result) + " kg";
   fielresult.textContent.className += "results";
   return result;
 }
